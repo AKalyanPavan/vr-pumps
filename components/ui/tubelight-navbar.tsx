@@ -23,7 +23,9 @@ export function NavBar({ items, className }: NavBarProps) {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 1150)
+      if (!isMobile) {
+        setIsMobile(window.innerWidth < 1150);
+      }
     }
     handleResize()
     window.addEventListener("resize", handleResize)

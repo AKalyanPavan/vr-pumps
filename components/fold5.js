@@ -3,8 +3,6 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
-import favouriteFill from '@/images/homepage/favourite-fill.svg';
-import favourite from '@/images/homepage/favourite.svg';
 import FavouriteButton from './favourite-button.js';
 
 import product1 from "@/images/homepage/fold5/product1.png";

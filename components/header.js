@@ -1,6 +1,7 @@
 "use client";
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 import { Home, User, Briefcase, FileText, Phone, Menu } from 'lucide-react'
 import { NavBar } from "@/components/ui/tubelight-navbar"
@@ -27,13 +28,13 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="/" className="flex items-center">
+            <Link href="/" className="flex items-center">
               <Image
                 src={logo}
                 alt="VR PUMPS"
                 width={150}
               />
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -81,13 +82,13 @@ export default function Header() {
           <div className="lg:hidden py-4 border-t border-gray-100">
             <nav className="flex flex-col space-y-3">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.name}
                   href={item.url}
                   className="text-gray-700 hover:text-blue-600 font-medium text-sm py-2 transition-colors duration-200"
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
               <button className="sm:hidden bg-[#377DFF] text-white px-4 py-2 rounded-sm font-medium text-sm transition-colors duration-200 mt-2">
                 Login
