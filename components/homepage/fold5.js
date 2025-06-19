@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
-import FavouriteButton from './favourite-button.js';
+import FavouriteButton from '@/components/favourite-button.js';
 
 import product1 from "@/images/homepage/fold5/product1.png";
 import product2 from "@/images/homepage/fold5/product2.png";

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import fold1image1 from '@/images/homepage/fold1/fold1image1.png';
 import arrowRight from '@/images/homepage/arrow-right.png';
 import arrowLeft from '@/images/homepage/arrow-left.png';
-import FavouriteButton from './favourite-button.js';
+import FavouriteButton from '@/components/favourite-button.js';
 
 export default function Fold1() {
   return (
