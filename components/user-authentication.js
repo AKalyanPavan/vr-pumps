@@ -17,7 +17,7 @@ const LoginModal = ({ onClose, onNavigate }) => (
     
     <h2 className="text-2xl font-semibold text-center mb-2">Log in</h2>
     <p className="text-center text-gray-600 mb-8">
-      Don't have an account yet? 
+      Don&apos;t have an account yet? 
       <button 
         onClick={() => onNavigate('signup')}
         className="text-blue-600 hover:underline ml-1 cursor-pointer"
@@ -55,7 +55,7 @@ const EmailLoginModal = ({ formData, errors, onInputChange, onSubmit, onClose, o
     
     <h2 className="text-2xl font-semibold text-center mb-2">Log in</h2>
     <p className="text-center text-gray-600 mb-8">
-      Don't have an account? 
+      Don&apos;t have an account? 
       <button 
         onClick={() => onNavigate('signup')}
         className="text-blue-600 hover:underline ml-1 cursor-pointer"

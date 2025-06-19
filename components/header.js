@@ -24,16 +24,6 @@ export default function Header() {
     { name: 'Contact', url: '#', icon: Phone },
   ]
 
-  const switchToSignup = () => {
-    setShowLogin(false);
-    setShowSignup(true);
-  };
-
-  const switchToLogin = () => {
-    setShowSignup(false);
-    setShowLogin(true);
-  };
-
   return (
     <>
       <header className="w-full bg-white border-b border-gray-100 py-[20px] items-center top-[0px] sticky z-[11]">
