@@ -17,14 +17,14 @@ interface NavBarProps {
   className?: string
 }
 
-export function NavBar({ items, className }: NavBarProps) {
-  const [activeTab, setActiveTab] = useState(items[0].name)
+export function NavBar({ items, className, navItem }: NavBarProps) {
+  const [activeTab, setActiveTab] = useState(navItem)
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
     const handleResize = () => {
       if (!isMobile) {
-        setIsMobile(window.innerWidth < 1150);
+        setIsMobile(window.innerWidth < 1280);
       }
     }
     handleResize()
@@ -39,7 +39,7 @@ export function NavBar({ items, className }: NavBarProps) {
         className,
       )}
     >
-      <div className="flex items-center sm:gap-3 bg-background/5 border border-border backdrop-blur-lg py-1 px-1 rounded-full shadow-lg">
+      <div className="flex items-center bg-background/5 border border-border backdrop-blur-lg py-1 px-1 rounded-full shadow-lg">
         {items.map((item) => {
           const Icon = item.icon
           const isActive = activeTab === item.name
@@ -55,8 +55,8 @@ export function NavBar({ items, className }: NavBarProps) {
                 isActive && "bg-[#e4ebff] text-primary",
               )}
             >
-              <span className="hidden min-[1150px]:inline">{item.name}</span>
-              <span className="min-[1150px]:hidden">
+              <span className="hidden xl:inline">{item.name}</span>
+              <span className="xl:hidden">
                 <Icon size={18} strokeWidth={2.5} />
               </span>
               {isActive && (

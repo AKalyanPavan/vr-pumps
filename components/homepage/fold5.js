@@ -222,7 +222,7 @@ export default function Fold5() {
                   <div className="flex">
                     {renderStars(product.rating)}
                   </div>
-                  {product.reviews > 0 && (
+                  {product.reviews >= 0 && (
                     <span className="text-sm text-blue-600">{product.reviews}</span>
                   )}
                 </div>
