@@ -115,8 +115,8 @@ import PrimemateEco from '@/images/pumps/Primemate/PrimemateEco.png';
 import PrimemateBoost from '@/images/pumps/Primemate/PrimemateBoost.png';
 import PrimemateTurbo from '@/images/pumps/Primemate/PrimemateTurbo.png';
 
-import SuctionProBoost from '@/images/pumps/SuctionPro/SuctionProBoost.png';
-import SuctionProEco from '@/images/pumps/SuctionPro/SuctionProEco.png';
+import SuctionProBoost from '@/images/pumps/Suctionpro/SuctionProBoost.png';
+import SuctionProEco from '@/images/pumps/Suctionpro/SuctionProEco.png';
 
 import DrainforceBoost from '@/images/pumps/Drainforce/DrainforceBoost.png';
 import DrainforceEco from '@/images/pumps/Drainforce/DrainforceEco.png';
