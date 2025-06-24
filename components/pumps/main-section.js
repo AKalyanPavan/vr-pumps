@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import React, { useState } from 'react';
-import { ChevronDown, Grid, List, Star, Filter, X } from 'lucide-react';
+import { ChevronDown, Grid, List, Filter, X } from 'lucide-react';
 import { allProducts } from '@/components/pumps-list.js';
 import FavouriteButton from '@/components/favourite-button.js';
 import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
