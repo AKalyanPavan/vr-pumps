@@ -15,6 +15,7 @@ interface NavItem {
 interface NavBarProps {
   items: NavItem[]
   className?: string
+  navItem?: string
 }
 
 export function NavBar({ items, className, navItem }: NavBarProps) {
