@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 interface InteractiveHoverButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   text?: string;
+  iconType?: string;
 }
 
 const InteractiveHoverButton = React.forwardRef<
